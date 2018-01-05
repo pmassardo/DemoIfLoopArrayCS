@@ -1039,8 +1039,5 @@ namespace DemoIfLoopArrayCS
         }
         #endregion
 
-        #region "test"
-        #endregion
-
     }
 }
