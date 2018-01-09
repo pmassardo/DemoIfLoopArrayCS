@@ -93,6 +93,14 @@
             this.lblReset = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.grpMethodAdd = new System.Windows.Forms.GroupBox();
+            this.lbNumberTwo = new System.Windows.Forms.Label();
+            this.tbNumberTwo = new System.Windows.Forms.TextBox();
+            this.lbAddFunctionDescription = new System.Windows.Forms.Label();
+            this.lbAddDemoOutput = new System.Windows.Forms.Label();
+            this.lbNumberOne = new System.Windows.Forms.Label();
+            this.tbNumberOne = new System.Windows.Forms.TextBox();
+            this.btnAddDemo = new System.Windows.Forms.Button();
             this.grpIf.SuspendLayout();
             this.grpNestedIf.SuspendLayout();
             this.grpForLoop.SuspendLayout();
@@ -104,6 +112,7 @@
             this.grpWhileLoopBreak.SuspendLayout();
             this.grpWhileLoop.SuspendLayout();
             this.grpReset.SuspendLayout();
+            this.grpMethodAdd.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpIf
@@ -345,10 +354,10 @@
             this.grpMethodDemo.Controls.Add(this.lbMethodInput);
             this.grpMethodDemo.Controls.Add(this.tbMethodInput);
             this.grpMethodDemo.Controls.Add(this.btnMethodDemo);
-            this.grpMethodDemo.Location = new System.Drawing.Point(199, 444);
+            this.grpMethodDemo.Location = new System.Drawing.Point(395, 447);
             this.grpMethodDemo.Name = "grpMethodDemo";
             this.grpMethodDemo.Size = new System.Drawing.Size(190, 237);
-            this.grpMethodDemo.TabIndex = 9;
+            this.grpMethodDemo.TabIndex = 10;
             this.grpMethodDemo.TabStop = false;
             this.grpMethodDemo.Text = "10. Method/&Return Function";
             // 
@@ -690,10 +699,10 @@
             // 
             this.grpReset.Controls.Add(this.lblReset);
             this.grpReset.Controls.Add(this.btnReset);
-            this.grpReset.Location = new System.Drawing.Point(395, 446);
+            this.grpReset.Location = new System.Drawing.Point(591, 447);
             this.grpReset.Name = "grpReset";
-            this.grpReset.Size = new System.Drawing.Size(190, 237);
-            this.grpReset.TabIndex = 10;
+            this.grpReset.Size = new System.Drawing.Size(190, 205);
+            this.grpReset.TabIndex = 11;
             this.grpReset.TabStop = false;
             this.grpReset.Text = "11. Method/&Void Function";
             // 
@@ -712,7 +721,7 @@
             this.btnReset.Location = new System.Drawing.Point(55, 122);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
-            this.btnReset.TabIndex = 4;
+            this.btnReset.TabIndex = 1;
             this.btnReset.Text = "&Reset";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
@@ -723,10 +732,87 @@
             this.btnExit.Location = new System.Drawing.Point(706, 658);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 11;
+            this.btnExit.TabIndex = 12;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // grpMethodAdd
+            // 
+            this.grpMethodAdd.Controls.Add(this.lbNumberTwo);
+            this.grpMethodAdd.Controls.Add(this.tbNumberTwo);
+            this.grpMethodAdd.Controls.Add(this.lbAddFunctionDescription);
+            this.grpMethodAdd.Controls.Add(this.lbAddDemoOutput);
+            this.grpMethodAdd.Controls.Add(this.lbNumberOne);
+            this.grpMethodAdd.Controls.Add(this.tbNumberOne);
+            this.grpMethodAdd.Controls.Add(this.btnAddDemo);
+            this.grpMethodAdd.Location = new System.Drawing.Point(199, 447);
+            this.grpMethodAdd.Name = "grpMethodAdd";
+            this.grpMethodAdd.Size = new System.Drawing.Size(190, 237);
+            this.grpMethodAdd.TabIndex = 9;
+            this.grpMethodAdd.TabStop = false;
+            this.grpMethodAdd.Text = "10. Method/Function &Add";
+            // 
+            // lbNumberTwo
+            // 
+            this.lbNumberTwo.Location = new System.Drawing.Point(13, 114);
+            this.lbNumberTwo.Name = "lbNumberTwo";
+            this.lbNumberTwo.Size = new System.Drawing.Size(57, 13);
+            this.lbNumberTwo.TabIndex = 3;
+            this.lbNumberTwo.Text = "Enter #2:";
+            // 
+            // tbNumberTwo
+            // 
+            this.tbNumberTwo.Location = new System.Drawing.Point(75, 114);
+            this.tbNumberTwo.Name = "tbNumberTwo";
+            this.tbNumberTwo.Size = new System.Drawing.Size(100, 20);
+            this.tbNumberTwo.TabIndex = 4;
+            this.tbNumberTwo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbNumberTwo.GotFocus += new System.EventHandler(this.input_GotFocus);
+            // 
+            // lbAddFunctionDescription
+            // 
+            this.lbAddFunctionDescription.Location = new System.Drawing.Point(12, 18);
+            this.lbAddFunctionDescription.Name = "lbAddFunctionDescription";
+            this.lbAddFunctionDescription.Size = new System.Drawing.Size(163, 74);
+            this.lbAddFunctionDescription.TabIndex = 0;
+            this.lbAddFunctionDescription.Text = "Enter a number in each box and click Enter. This will add the two numbers togethe" +
+    "r. This has no validation, so you must enter two numbers.";
+            // 
+            // lbAddDemoOutput
+            // 
+            this.lbAddDemoOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbAddDemoOutput.Location = new System.Drawing.Point(16, 146);
+            this.lbAddDemoOutput.Name = "lbAddDemoOutput";
+            this.lbAddDemoOutput.Size = new System.Drawing.Size(160, 61);
+            this.lbAddDemoOutput.TabIndex = 5;
+            // 
+            // lbNumberOne
+            // 
+            this.lbNumberOne.Location = new System.Drawing.Point(13, 92);
+            this.lbNumberOne.Name = "lbNumberOne";
+            this.lbNumberOne.Size = new System.Drawing.Size(56, 13);
+            this.lbNumberOne.TabIndex = 1;
+            this.lbNumberOne.Text = "Enter #1:";
+            // 
+            // tbNumberOne
+            // 
+            this.tbNumberOne.Location = new System.Drawing.Point(75, 92);
+            this.tbNumberOne.Name = "tbNumberOne";
+            this.tbNumberOne.Size = new System.Drawing.Size(100, 20);
+            this.tbNumberOne.TabIndex = 2;
+            this.tbNumberOne.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbNumberOne.GotFocus += new System.EventHandler(this.input_GotFocus);
+            // 
+            // btnAddDemo
+            // 
+            this.btnAddDemo.Location = new System.Drawing.Point(101, 210);
+            this.btnAddDemo.Name = "btnAddDemo";
+            this.btnAddDemo.Size = new System.Drawing.Size(75, 23);
+            this.btnAddDemo.TabIndex = 6;
+            this.btnAddDemo.Text = "&Enter";
+            this.btnAddDemo.UseVisualStyleBackColor = true;
+            this.btnAddDemo.Click += new System.EventHandler(this.btnAddDemo_Click);
             // 
             // frmDemoIfArrayLoop
             // 
@@ -735,6 +821,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnReset;
             this.ClientSize = new System.Drawing.Size(784, 684);
+            this.Controls.Add(this.grpMethodAdd);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.grpReset);
             this.Controls.Add(this.grpMethodDemo);
@@ -771,6 +858,8 @@
             this.grpWhileLoop.ResumeLayout(false);
             this.grpWhileLoop.PerformLayout();
             this.grpReset.ResumeLayout(false);
+            this.grpMethodAdd.ResumeLayout(false);
+            this.grpMethodAdd.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -841,6 +930,14 @@
         internal System.Windows.Forms.Label lblReset;
         internal System.Windows.Forms.Button btnReset;
         internal System.Windows.Forms.Button btnExit;
+        internal System.Windows.Forms.GroupBox grpMethodAdd;
+        internal System.Windows.Forms.Label lbNumberTwo;
+        internal System.Windows.Forms.TextBox tbNumberTwo;
+        internal System.Windows.Forms.Label lbAddFunctionDescription;
+        internal System.Windows.Forms.Label lbAddDemoOutput;
+        internal System.Windows.Forms.Label lbNumberOne;
+        internal System.Windows.Forms.TextBox tbNumberOne;
+        internal System.Windows.Forms.Button btnAddDemo;
     }
 }
 

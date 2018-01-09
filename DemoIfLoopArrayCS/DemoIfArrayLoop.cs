@@ -161,10 +161,12 @@ namespace DemoIfLoopArrayCS
                     // loop starting at the number 1
                     // until the counter has reached
                     // the number the user has input
-
+                    //      initializer;        condition;              iterator/incrementor
                     for (int counter = 1; counter <= userInputInteger; counter++)
                     {
+                        // append number to the output
                         output += counter.ToString() + " ";
+
                     }
 
                 }
@@ -668,6 +670,98 @@ namespace DemoIfLoopArrayCS
         }
         #endregion
 
+        #region "add method/function demo"
+
+        /// <summary>
+        ///  btnAddDemo_Click - event that fires when the btnAddDemo is click and demonstrates a method function by calling a simple add method/function.
+        /// </summary>
+        /// <param name="sender">object</param>
+        /// <param name="e">EventArgs</param>
+        private void btnAddDemo_Click(object sender, EventArgs e)
+        {
+
+            string inputNumberOneString = string.Empty;   // holds the string assigned from text box one
+            string inputNumberTwoString = string.Empty;   // holds the string assigned from text box two
+            double inputNumberOne = 0.0;                  // holds the double converted and assigned from input number one string.
+            double inputNumberTwo = 0.0;                  // holds the double converted and assigned from input number two string.
+            double summedNumber = 0.0;                    // holds the double assigned from Add function.
+
+            // get the input from the textboxes
+            inputNumberOneString = tbNumberOne.Text;     // get the string input from text box one
+            inputNumberTwoString = tbNumberTwo.Text;     // get the string input from text box two
+
+            // convert the string input to doubles
+            // ( I//m not validating to see if the strings are doubles, so the code is much simpler.The concept to be learned here is how to create and call a method/ function)
+            inputNumberOne = Convert.ToDouble(inputNumberOneString); // convert the 1st number string to a double and assign it to the input number one (double) variable
+            inputNumberTwo = Convert.ToDouble(inputNumberTwoString); // convert the 2st number string to a double and assign it to the input number two (double) variable
+
+            // call the Add method/function and pass it the two double variables
+            // the 1st argument passed is the input number one (double) variable
+            // the 2nd argument passed is the input number two (double) variable.
+            // The returned value of the function is assigned (=) to the summed number (double) variable
+            summedNumber = Add(inputNumberOne, inputNumberTwo);
+
+            // display the the result to the user by
+            // converting all three variable to strings
+            // and contatenating them to show a simple 
+            // addition math equation.
+            lbAddDemoOutput.Text = summedNumber.ToString("n2") + " = " + inputNumberOne.ToString("n2") + " + " + inputNumberTwo.ToString("n2");
+
+
+        }
+
+        /// <summary>
+        /// Add - Adds two numbers
+        /// </summary>
+        /// <param name="numberOne">Double</param>
+        /// <param name="numberTwo">Double</param>
+        /// <returns>Double - the sum of the two arguments passed to the Method/Function</returns>
+        private double Add(double numberOne, double numberTwo)
+        {
+            // declare a variable to hold the return value that will be summed
+            // based on the two
+            double returnSumNumber = 0.0;
+
+            // add number one and number two and assign the
+            // value to return sum mumber.
+            returnSumNumber = numberOne + numberTwo;
+
+            // return the value in return sum number
+            // back to the code that called our Add
+            // method
+            return returnSumNumber;
+
+        }
+
+        /// <summary>
+        /// Add - Adds any number of numbers, but the numbers must be passed in as a double array
+        /// </summary>
+        /// <param name="numberOne">Double</param>
+        /// <param name="numberTwo">Double</param>
+        /// <returns>Double - the sum of the array argument passed to the Method/Function</returns>
+        private double Add(double[] numbers)
+        {
+            // declare a variable to hold the return value that will be summed
+            // based on the summed numbers in the array
+            double returnSummedNumber = 0;
+
+            // loop the array and continually add
+            // the current element to the summed number to be returned
+            for (int index = 0; index < numbers.Length; index++)
+            {
+                // add the current numbers element to
+                // the summed number to be returned
+                returnSummedNumber += numbers[index];
+            }
+
+            // return the value in return sum number
+            // back to the code that called our Add
+            // method
+            return returnSummedNumber;
+        }
+
+        #endregion
+
         #region "method demo"
 
         /// <summary>
@@ -687,7 +781,6 @@ namespace DemoIfLoopArrayCS
 
             // variables
             string userInput = string.Empty;  // Holds the user input as a string
-            double userInputDouble = 0.0;     // Holds the user input if it converts to a Double
             int userInputInteger = 0;     // Holds the user input if it converts to a Integer
             string output = string.Empty;     // Holds the output to be displayed to the user
             int[] demoArray;            // Holds calculated values that are calcualted during processing
@@ -736,6 +829,8 @@ namespace DemoIfLoopArrayCS
             int userInputInteger = 0;       // Holds the user input if it converts to a Integer
             bool returnValue = true;         // Holds the value that return to the calling code True if it passed validation. False if it did not.
             string output = string.Empty;   // Holds the output to be displayed to the user
+
+
 
             if (double.TryParse(userInput, out userInputDouble))  // If the input is an Double
             {
@@ -792,7 +887,6 @@ namespace DemoIfLoopArrayCS
             return returnValue;
 
         }
-
 
         /// <summary>
         /// Function that accepts an integer representing the length 
@@ -1022,6 +1116,14 @@ namespace DemoIfLoopArrayCS
                 this.AcceptButton = btnMethodDemo;
 
             }
+            else if ((controlName == "tbNumberOne") | (controlName == "tbNumberTwo"))
+            {
+
+                // set the accept button
+                // to the appropriate button
+                this.AcceptButton = btnAddDemo;
+
+            }
         }
         #endregion
 
@@ -1038,6 +1140,10 @@ namespace DemoIfLoopArrayCS
 
         }
         #endregion
+
+        #region "place"
+        #endregion
+
 
     }
 }
