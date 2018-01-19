@@ -1,4 +1,11 @@
-﻿using System;
+﻿/// <summary>
+/// Author: Alfred Massardo
+/// Project Name: DemoIfLoopArrayCS
+/// Date: 01-Jan-2018
+/// Description: Application to demonstrate various c# constructs.
+/// </summary>
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -707,7 +714,6 @@ namespace DemoIfLoopArrayCS
             // addition math equation.
             lbAddDemoOutput.Text = summedNumber.ToString("n2") + " = " + inputNumberOne.ToString("n2") + " + " + inputNumberTwo.ToString("n2");
 
-
         }
 
         /// <summary>
@@ -732,6 +738,20 @@ namespace DemoIfLoopArrayCS
             return returnSumNumber;
 
         }
+
+        private void ResetForm(bool Enabled)
+        {
+
+            btnAddDemo.Enabled = Enabled;
+            
+            btnCreateArrayDemo.Enabled = Enabled;
+
+            tbNumberOne.Text = string.Empty;
+
+            tbNumberTwo.Text = string.Empty;
+
+        }
+
 
         /// <summary>
         /// Add - Adds any number of numbers, but the numbers must be passed in as a double array

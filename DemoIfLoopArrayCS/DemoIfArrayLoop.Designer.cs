@@ -834,6 +834,8 @@
             this.Controls.Add(this.grpForLoop);
             this.Controls.Add(this.grpNestedIf);
             this.Controls.Add(this.grpIf);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmDemoIfArrayLoop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "c# Demo If Array Loop";
