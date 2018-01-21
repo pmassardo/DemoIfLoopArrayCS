@@ -101,6 +101,12 @@
             this.lbNumberOne = new System.Windows.Forms.Label();
             this.tbNumberOne = new System.Windows.Forms.TextBox();
             this.btnAddDemo = new System.Windows.Forms.Button();
+            this.grpSelectCase = new System.Windows.Forms.GroupBox();
+            this.lblSelectCaseDescription = new System.Windows.Forms.Label();
+            this.lbSelectCaseOutput = new System.Windows.Forms.Label();
+            this.lbSelectCase = new System.Windows.Forms.Label();
+            this.tbSelectCase = new System.Windows.Forms.TextBox();
+            this.btnSelectCase = new System.Windows.Forms.Button();
             this.grpIf.SuspendLayout();
             this.grpNestedIf.SuspendLayout();
             this.grpForLoop.SuspendLayout();
@@ -113,6 +119,7 @@
             this.grpWhileLoop.SuspendLayout();
             this.grpReset.SuspendLayout();
             this.grpMethodAdd.SuspendLayout();
+            this.grpSelectCase.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpIf
@@ -122,9 +129,9 @@
             this.grpIf.Controls.Add(this.lbIfInput);
             this.grpIf.Controls.Add(this.tbIfInput);
             this.grpIf.Controls.Add(this.btnIfDemo);
-            this.grpIf.Location = new System.Drawing.Point(3, 12);
+            this.grpIf.Location = new System.Drawing.Point(3, 3);
             this.grpIf.Name = "grpIf";
-            this.grpIf.Size = new System.Drawing.Size(190, 211);
+            this.grpIf.Size = new System.Drawing.Size(190, 195);
             this.grpIf.TabIndex = 0;
             this.grpIf.TabStop = false;
             this.grpIf.Text = "&1. If Demo";
@@ -143,7 +150,7 @@
             this.lbIfOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbIfOutput.Location = new System.Drawing.Point(15, 118);
             this.lbIfOutput.Name = "lbIfOutput";
-            this.lbIfOutput.Size = new System.Drawing.Size(160, 61);
+            this.lbIfOutput.Size = new System.Drawing.Size(160, 46);
             this.lbIfOutput.TabIndex = 3;
             // 
             // lbIfInput
@@ -165,7 +172,7 @@
             // 
             // btnIfDemo
             // 
-            this.btnIfDemo.Location = new System.Drawing.Point(100, 182);
+            this.btnIfDemo.Location = new System.Drawing.Point(101, 167);
             this.btnIfDemo.Name = "btnIfDemo";
             this.btnIfDemo.Size = new System.Drawing.Size(75, 23);
             this.btnIfDemo.TabIndex = 4;
@@ -180,9 +187,9 @@
             this.grpNestedIf.Controls.Add(this.lbNestedIfInput);
             this.grpNestedIf.Controls.Add(this.tbNestedIfInput);
             this.grpNestedIf.Controls.Add(this.btnNestedIfDemo);
-            this.grpNestedIf.Location = new System.Drawing.Point(199, 12);
+            this.grpNestedIf.Location = new System.Drawing.Point(199, 3);
             this.grpNestedIf.Name = "grpNestedIf";
-            this.grpNestedIf.Size = new System.Drawing.Size(190, 211);
+            this.grpNestedIf.Size = new System.Drawing.Size(190, 195);
             this.grpNestedIf.TabIndex = 1;
             this.grpNestedIf.TabStop = false;
             this.grpNestedIf.Text = "&2. Nested If Demo";
@@ -201,7 +208,7 @@
             this.lbNestedIfOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbNestedIfOutput.Location = new System.Drawing.Point(15, 118);
             this.lbNestedIfOutput.Name = "lbNestedIfOutput";
-            this.lbNestedIfOutput.Size = new System.Drawing.Size(160, 61);
+            this.lbNestedIfOutput.Size = new System.Drawing.Size(160, 46);
             this.lbNestedIfOutput.TabIndex = 3;
             // 
             // lbNestedIfInput
@@ -223,7 +230,7 @@
             // 
             // btnNestedIfDemo
             // 
-            this.btnNestedIfDemo.Location = new System.Drawing.Point(100, 182);
+            this.btnNestedIfDemo.Location = new System.Drawing.Point(100, 167);
             this.btnNestedIfDemo.Name = "btnNestedIfDemo";
             this.btnNestedIfDemo.Size = new System.Drawing.Size(75, 23);
             this.btnNestedIfDemo.TabIndex = 4;
@@ -238,9 +245,9 @@
             this.grpForLoop.Controls.Add(this.lbForLoopDemoInput);
             this.grpForLoop.Controls.Add(this.tbForLoopDemoInput);
             this.grpForLoop.Controls.Add(this.btnForLoopDemo);
-            this.grpForLoop.Location = new System.Drawing.Point(395, 12);
+            this.grpForLoop.Location = new System.Drawing.Point(395, 3);
             this.grpForLoop.Name = "grpForLoop";
-            this.grpForLoop.Size = new System.Drawing.Size(190, 211);
+            this.grpForLoop.Size = new System.Drawing.Size(190, 195);
             this.grpForLoop.TabIndex = 2;
             this.grpForLoop.TabStop = false;
             this.grpForLoop.Text = "&3. For Loop";
@@ -259,7 +266,7 @@
             this.lbForLoopDemoOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbForLoopDemoOutput.Location = new System.Drawing.Point(15, 118);
             this.lbForLoopDemoOutput.Name = "lbForLoopDemoOutput";
-            this.lbForLoopDemoOutput.Size = new System.Drawing.Size(160, 61);
+            this.lbForLoopDemoOutput.Size = new System.Drawing.Size(160, 46);
             this.lbForLoopDemoOutput.TabIndex = 3;
             // 
             // lbForLoopDemoInput
@@ -281,7 +288,7 @@
             // 
             // btnForLoopDemo
             // 
-            this.btnForLoopDemo.Location = new System.Drawing.Point(100, 182);
+            this.btnForLoopDemo.Location = new System.Drawing.Point(100, 167);
             this.btnForLoopDemo.Name = "btnForLoopDemo";
             this.btnForLoopDemo.Size = new System.Drawing.Size(75, 23);
             this.btnForLoopDemo.TabIndex = 4;
@@ -296,9 +303,9 @@
             this.grpForLoopBreak.Controls.Add(this.lbForLoopBreakDemoInput);
             this.grpForLoopBreak.Controls.Add(this.tbForLoopBreakDemoInput);
             this.grpForLoopBreak.Controls.Add(this.btnForLoopBreakDemo);
-            this.grpForLoopBreak.Location = new System.Drawing.Point(591, 12);
+            this.grpForLoopBreak.Location = new System.Drawing.Point(591, 3);
             this.grpForLoopBreak.Name = "grpForLoopBreak";
-            this.grpForLoopBreak.Size = new System.Drawing.Size(190, 211);
+            this.grpForLoopBreak.Size = new System.Drawing.Size(190, 195);
             this.grpForLoopBreak.TabIndex = 3;
             this.grpForLoopBreak.TabStop = false;
             this.grpForLoopBreak.Text = "&4. For Loop Elegant Break";
@@ -317,7 +324,7 @@
             this.lbForLoopBreakDemoOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbForLoopBreakDemoOutput.Location = new System.Drawing.Point(15, 118);
             this.lbForLoopBreakDemoOutput.Name = "lbForLoopBreakDemoOutput";
-            this.lbForLoopBreakDemoOutput.Size = new System.Drawing.Size(160, 61);
+            this.lbForLoopBreakDemoOutput.Size = new System.Drawing.Size(160, 46);
             this.lbForLoopBreakDemoOutput.TabIndex = 3;
             // 
             // lbForLoopBreakDemoInput
@@ -339,7 +346,7 @@
             // 
             // btnForLoopBreakDemo
             // 
-            this.btnForLoopBreakDemo.Location = new System.Drawing.Point(100, 182);
+            this.btnForLoopBreakDemo.Location = new System.Drawing.Point(100, 167);
             this.btnForLoopBreakDemo.Name = "btnForLoopBreakDemo";
             this.btnForLoopBreakDemo.Size = new System.Drawing.Size(75, 23);
             this.btnForLoopBreakDemo.TabIndex = 4;
@@ -354,9 +361,9 @@
             this.grpMethodDemo.Controls.Add(this.lbMethodInput);
             this.grpMethodDemo.Controls.Add(this.tbMethodInput);
             this.grpMethodDemo.Controls.Add(this.btnMethodDemo);
-            this.grpMethodDemo.Location = new System.Drawing.Point(395, 447);
+            this.grpMethodDemo.Location = new System.Drawing.Point(395, 396);
             this.grpMethodDemo.Name = "grpMethodDemo";
-            this.grpMethodDemo.Size = new System.Drawing.Size(190, 237);
+            this.grpMethodDemo.Size = new System.Drawing.Size(190, 222);
             this.grpMethodDemo.TabIndex = 10;
             this.grpMethodDemo.TabStop = false;
             this.grpMethodDemo.Text = "10. Method/&Return Function";
@@ -374,7 +381,7 @@
             this.lbMethodOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbMethodOutput.Location = new System.Drawing.Point(16, 146);
             this.lbMethodOutput.Name = "lbMethodOutput";
-            this.lbMethodOutput.Size = new System.Drawing.Size(160, 61);
+            this.lbMethodOutput.Size = new System.Drawing.Size(160, 46);
             this.lbMethodOutput.TabIndex = 3;
             // 
             // lbMethodInput
@@ -396,7 +403,7 @@
             // 
             // btnMethodDemo
             // 
-            this.btnMethodDemo.Location = new System.Drawing.Point(101, 210);
+            this.btnMethodDemo.Location = new System.Drawing.Point(101, 195);
             this.btnMethodDemo.Name = "btnMethodDemo";
             this.btnMethodDemo.Size = new System.Drawing.Size(75, 23);
             this.btnMethodDemo.TabIndex = 4;
@@ -411,9 +418,9 @@
             this.grpCreateArray.Controls.Add(this.lbCreateArrayInput);
             this.grpCreateArray.Controls.Add(this.tbCreateArrayInput);
             this.grpCreateArray.Controls.Add(this.btnCreateArrayDemo);
-            this.grpCreateArray.Location = new System.Drawing.Point(3, 444);
+            this.grpCreateArray.Location = new System.Drawing.Point(3, 393);
             this.grpCreateArray.Name = "grpCreateArray";
-            this.grpCreateArray.Size = new System.Drawing.Size(190, 237);
+            this.grpCreateArray.Size = new System.Drawing.Size(190, 222);
             this.grpCreateArray.TabIndex = 8;
             this.grpCreateArray.TabStop = false;
             this.grpCreateArray.Text = "&9. Create Array";
@@ -433,7 +440,7 @@
             this.lbCreateArrayOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbCreateArrayOutput.Location = new System.Drawing.Point(16, 146);
             this.lbCreateArrayOutput.Name = "lbCreateArrayOutput";
-            this.lbCreateArrayOutput.Size = new System.Drawing.Size(160, 61);
+            this.lbCreateArrayOutput.Size = new System.Drawing.Size(160, 46);
             this.lbCreateArrayOutput.TabIndex = 3;
             // 
             // lbCreateArrayInput
@@ -455,7 +462,7 @@
             // 
             // btnCreateArrayDemo
             // 
-            this.btnCreateArrayDemo.Location = new System.Drawing.Point(101, 210);
+            this.btnCreateArrayDemo.Location = new System.Drawing.Point(101, 198);
             this.btnCreateArrayDemo.Name = "btnCreateArrayDemo";
             this.btnCreateArrayDemo.Size = new System.Drawing.Size(75, 23);
             this.btnCreateArrayDemo.TabIndex = 4;
@@ -470,9 +477,9 @@
             this.grpDoWhileLoopBreak.Controls.Add(this.lbDoWhileLoopBreakDemoInput);
             this.grpDoWhileLoopBreak.Controls.Add(this.tbDoWhileLoopBreakDemoInput);
             this.grpDoWhileLoopBreak.Controls.Add(this.btnDoWhileLoopBreakDemo);
-            this.grpDoWhileLoopBreak.Location = new System.Drawing.Point(591, 228);
+            this.grpDoWhileLoopBreak.Location = new System.Drawing.Point(591, 199);
             this.grpDoWhileLoopBreak.Name = "grpDoWhileLoopBreak";
-            this.grpDoWhileLoopBreak.Size = new System.Drawing.Size(190, 211);
+            this.grpDoWhileLoopBreak.Size = new System.Drawing.Size(190, 195);
             this.grpDoWhileLoopBreak.TabIndex = 7;
             this.grpDoWhileLoopBreak.TabStop = false;
             this.grpDoWhileLoopBreak.Text = "&8. Do While Loop Elegant Break";
@@ -491,7 +498,7 @@
             this.lbDoWhileLoopBreakDemoOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbDoWhileLoopBreakDemoOutput.Location = new System.Drawing.Point(15, 118);
             this.lbDoWhileLoopBreakDemoOutput.Name = "lbDoWhileLoopBreakDemoOutput";
-            this.lbDoWhileLoopBreakDemoOutput.Size = new System.Drawing.Size(160, 61);
+            this.lbDoWhileLoopBreakDemoOutput.Size = new System.Drawing.Size(160, 46);
             this.lbDoWhileLoopBreakDemoOutput.TabIndex = 3;
             // 
             // lbDoWhileLoopBreakDemoInput
@@ -513,7 +520,7 @@
             // 
             // btnDoWhileLoopBreakDemo
             // 
-            this.btnDoWhileLoopBreakDemo.Location = new System.Drawing.Point(100, 182);
+            this.btnDoWhileLoopBreakDemo.Location = new System.Drawing.Point(100, 168);
             this.btnDoWhileLoopBreakDemo.Name = "btnDoWhileLoopBreakDemo";
             this.btnDoWhileLoopBreakDemo.Size = new System.Drawing.Size(75, 23);
             this.btnDoWhileLoopBreakDemo.TabIndex = 4;
@@ -528,9 +535,9 @@
             this.grpDoWhileLoop.Controls.Add(this.lbDoWhileLoopDemoInput);
             this.grpDoWhileLoop.Controls.Add(this.tbDoWhileLoopDemoInput);
             this.grpDoWhileLoop.Controls.Add(this.btnDoWhileLoopDemo);
-            this.grpDoWhileLoop.Location = new System.Drawing.Point(395, 229);
+            this.grpDoWhileLoop.Location = new System.Drawing.Point(395, 200);
             this.grpDoWhileLoop.Name = "grpDoWhileLoop";
-            this.grpDoWhileLoop.Size = new System.Drawing.Size(190, 211);
+            this.grpDoWhileLoop.Size = new System.Drawing.Size(190, 195);
             this.grpDoWhileLoop.TabIndex = 6;
             this.grpDoWhileLoop.TabStop = false;
             this.grpDoWhileLoop.Text = "&7. Do While Loop";
@@ -549,7 +556,7 @@
             this.lbDoWhileLoopDemoOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbDoWhileLoopDemoOutput.Location = new System.Drawing.Point(15, 118);
             this.lbDoWhileLoopDemoOutput.Name = "lbDoWhileLoopDemoOutput";
-            this.lbDoWhileLoopDemoOutput.Size = new System.Drawing.Size(160, 61);
+            this.lbDoWhileLoopDemoOutput.Size = new System.Drawing.Size(160, 46);
             this.lbDoWhileLoopDemoOutput.TabIndex = 3;
             // 
             // lbDoWhileLoopDemoInput
@@ -571,7 +578,7 @@
             // 
             // btnDoWhileLoopDemo
             // 
-            this.btnDoWhileLoopDemo.Location = new System.Drawing.Point(100, 182);
+            this.btnDoWhileLoopDemo.Location = new System.Drawing.Point(100, 167);
             this.btnDoWhileLoopDemo.Name = "btnDoWhileLoopDemo";
             this.btnDoWhileLoopDemo.Size = new System.Drawing.Size(75, 23);
             this.btnDoWhileLoopDemo.TabIndex = 4;
@@ -586,9 +593,9 @@
             this.grpWhileLoopBreak.Controls.Add(this.lbWhileLoopBreakDemoInput);
             this.grpWhileLoopBreak.Controls.Add(this.tbWhileLoopBreakDemoInput);
             this.grpWhileLoopBreak.Controls.Add(this.btnWhileLoopBreakDemo);
-            this.grpWhileLoopBreak.Location = new System.Drawing.Point(199, 229);
+            this.grpWhileLoopBreak.Location = new System.Drawing.Point(199, 200);
             this.grpWhileLoopBreak.Name = "grpWhileLoopBreak";
-            this.grpWhileLoopBreak.Size = new System.Drawing.Size(190, 211);
+            this.grpWhileLoopBreak.Size = new System.Drawing.Size(190, 195);
             this.grpWhileLoopBreak.TabIndex = 5;
             this.grpWhileLoopBreak.TabStop = false;
             this.grpWhileLoopBreak.Text = "&6. While Loop Elegant Break";
@@ -607,7 +614,7 @@
             this.lbWhileLoopBreakDemoOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbWhileLoopBreakDemoOutput.Location = new System.Drawing.Point(15, 118);
             this.lbWhileLoopBreakDemoOutput.Name = "lbWhileLoopBreakDemoOutput";
-            this.lbWhileLoopBreakDemoOutput.Size = new System.Drawing.Size(160, 61);
+            this.lbWhileLoopBreakDemoOutput.Size = new System.Drawing.Size(160, 46);
             this.lbWhileLoopBreakDemoOutput.TabIndex = 3;
             // 
             // lbWhileLoopBreakDemoInput
@@ -629,7 +636,7 @@
             // 
             // btnWhileLoopBreakDemo
             // 
-            this.btnWhileLoopBreakDemo.Location = new System.Drawing.Point(100, 182);
+            this.btnWhileLoopBreakDemo.Location = new System.Drawing.Point(101, 167);
             this.btnWhileLoopBreakDemo.Name = "btnWhileLoopBreakDemo";
             this.btnWhileLoopBreakDemo.Size = new System.Drawing.Size(75, 23);
             this.btnWhileLoopBreakDemo.TabIndex = 4;
@@ -644,9 +651,9 @@
             this.grpWhileLoop.Controls.Add(this.lbWhileLoopDemoInput);
             this.grpWhileLoop.Controls.Add(this.tbWhileLoopDemoInput);
             this.grpWhileLoop.Controls.Add(this.btnWhileLoopDemo);
-            this.grpWhileLoop.Location = new System.Drawing.Point(3, 229);
+            this.grpWhileLoop.Location = new System.Drawing.Point(3, 200);
             this.grpWhileLoop.Name = "grpWhileLoop";
-            this.grpWhileLoop.Size = new System.Drawing.Size(190, 211);
+            this.grpWhileLoop.Size = new System.Drawing.Size(190, 195);
             this.grpWhileLoop.TabIndex = 4;
             this.grpWhileLoop.TabStop = false;
             this.grpWhileLoop.Text = "&5. While Loop";
@@ -665,7 +672,7 @@
             this.lbWhileLoopDemoOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbWhileLoopDemoOutput.Location = new System.Drawing.Point(15, 118);
             this.lbWhileLoopDemoOutput.Name = "lbWhileLoopDemoOutput";
-            this.lbWhileLoopDemoOutput.Size = new System.Drawing.Size(160, 61);
+            this.lbWhileLoopDemoOutput.Size = new System.Drawing.Size(160, 46);
             this.lbWhileLoopDemoOutput.TabIndex = 3;
             // 
             // lbWhileLoopDemoInput
@@ -687,7 +694,7 @@
             // 
             // btnWhileLoopDemo
             // 
-            this.btnWhileLoopDemo.Location = new System.Drawing.Point(100, 182);
+            this.btnWhileLoopDemo.Location = new System.Drawing.Point(100, 167);
             this.btnWhileLoopDemo.Name = "btnWhileLoopDemo";
             this.btnWhileLoopDemo.Size = new System.Drawing.Size(75, 23);
             this.btnWhileLoopDemo.TabIndex = 4;
@@ -699,9 +706,9 @@
             // 
             this.grpReset.Controls.Add(this.lblReset);
             this.grpReset.Controls.Add(this.btnReset);
-            this.grpReset.Location = new System.Drawing.Point(591, 447);
+            this.grpReset.Location = new System.Drawing.Point(591, 396);
             this.grpReset.Name = "grpReset";
-            this.grpReset.Size = new System.Drawing.Size(190, 205);
+            this.grpReset.Size = new System.Drawing.Size(190, 222);
             this.grpReset.TabIndex = 11;
             this.grpReset.TabStop = false;
             this.grpReset.Text = "11. Method/&Void Function";
@@ -729,10 +736,10 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(706, 658);
+            this.btnExit.Location = new System.Drawing.Point(706, 763);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 12;
+            this.btnExit.TabIndex = 13;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -746,9 +753,9 @@
             this.grpMethodAdd.Controls.Add(this.lbNumberOne);
             this.grpMethodAdd.Controls.Add(this.tbNumberOne);
             this.grpMethodAdd.Controls.Add(this.btnAddDemo);
-            this.grpMethodAdd.Location = new System.Drawing.Point(199, 447);
+            this.grpMethodAdd.Location = new System.Drawing.Point(199, 396);
             this.grpMethodAdd.Name = "grpMethodAdd";
-            this.grpMethodAdd.Size = new System.Drawing.Size(190, 237);
+            this.grpMethodAdd.Size = new System.Drawing.Size(190, 222);
             this.grpMethodAdd.TabIndex = 9;
             this.grpMethodAdd.TabStop = false;
             this.grpMethodAdd.Text = "10. Method/Function &Add";
@@ -784,7 +791,7 @@
             this.lbAddDemoOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbAddDemoOutput.Location = new System.Drawing.Point(16, 146);
             this.lbAddDemoOutput.Name = "lbAddDemoOutput";
-            this.lbAddDemoOutput.Size = new System.Drawing.Size(160, 61);
+            this.lbAddDemoOutput.Size = new System.Drawing.Size(160, 46);
             this.lbAddDemoOutput.TabIndex = 5;
             // 
             // lbNumberOne
@@ -806,7 +813,7 @@
             // 
             // btnAddDemo
             // 
-            this.btnAddDemo.Location = new System.Drawing.Point(101, 210);
+            this.btnAddDemo.Location = new System.Drawing.Point(101, 195);
             this.btnAddDemo.Name = "btnAddDemo";
             this.btnAddDemo.Size = new System.Drawing.Size(75, 23);
             this.btnAddDemo.TabIndex = 6;
@@ -814,13 +821,72 @@
             this.btnAddDemo.UseVisualStyleBackColor = true;
             this.btnAddDemo.Click += new System.EventHandler(this.btnAddDemo_Click);
             // 
+            // grpSelectCase
+            // 
+            this.grpSelectCase.Controls.Add(this.lblSelectCaseDescription);
+            this.grpSelectCase.Controls.Add(this.lbSelectCaseOutput);
+            this.grpSelectCase.Controls.Add(this.lbSelectCase);
+            this.grpSelectCase.Controls.Add(this.tbSelectCase);
+            this.grpSelectCase.Controls.Add(this.btnSelectCase);
+            this.grpSelectCase.Location = new System.Drawing.Point(3, 617);
+            this.grpSelectCase.Name = "grpSelectCase";
+            this.grpSelectCase.Size = new System.Drawing.Size(190, 175);
+            this.grpSelectCase.TabIndex = 12;
+            this.grpSelectCase.TabStop = false;
+            this.grpSelectCase.Text = "13. Select Case";
+            // 
+            // lblSelectCaseDescription
+            // 
+            this.lblSelectCaseDescription.Location = new System.Drawing.Point(12, 18);
+            this.lblSelectCaseDescription.Name = "lblSelectCaseDescription";
+            this.lblSelectCaseDescription.Size = new System.Drawing.Size(163, 53);
+            this.lblSelectCaseDescription.TabIndex = 0;
+            this.lblSelectCaseDescription.Text = "Enter a grade letter (A,B,C,D,F)  and click Enter. A comment will be displayed ba" +
+    "sed on the letter entered. \r\n";
+            // 
+            // lbSelectCaseOutput
+            // 
+            this.lbSelectCaseOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbSelectCaseOutput.Location = new System.Drawing.Point(16, 101);
+            this.lbSelectCaseOutput.Name = "lbSelectCaseOutput";
+            this.lbSelectCaseOutput.Size = new System.Drawing.Size(160, 42);
+            this.lbSelectCaseOutput.TabIndex = 3;
+            // 
+            // lbSelectCase
+            // 
+            this.lbSelectCase.Location = new System.Drawing.Point(13, 78);
+            this.lbSelectCase.Name = "lbSelectCase";
+            this.lbSelectCase.Size = new System.Drawing.Size(45, 13);
+            this.lbSelectCase.TabIndex = 1;
+            this.lbSelectCase.Text = "Enter #:";
+            // 
+            // tbSelectCase
+            // 
+            this.tbSelectCase.Location = new System.Drawing.Point(76, 78);
+            this.tbSelectCase.Name = "tbSelectCase";
+            this.tbSelectCase.Size = new System.Drawing.Size(100, 20);
+            this.tbSelectCase.TabIndex = 2;
+            this.tbSelectCase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbSelectCase.GotFocus += new System.EventHandler(this.input_GotFocus);
+            // 
+            // btnSelectCase
+            // 
+            this.btnSelectCase.Location = new System.Drawing.Point(101, 146);
+            this.btnSelectCase.Name = "btnSelectCase";
+            this.btnSelectCase.Size = new System.Drawing.Size(75, 23);
+            this.btnSelectCase.TabIndex = 4;
+            this.btnSelectCase.Text = "&Enter";
+            this.btnSelectCase.UseVisualStyleBackColor = true;
+            this.btnSelectCase.Click += new System.EventHandler(this.btnSelectCase_Click);
+            // 
             // frmDemoIfArrayLoop
             // 
             this.AcceptButton = this.btnIfDemo;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnReset;
-            this.ClientSize = new System.Drawing.Size(784, 684);
+            this.ClientSize = new System.Drawing.Size(784, 791);
+            this.Controls.Add(this.grpSelectCase);
             this.Controls.Add(this.grpMethodAdd);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.grpReset);
@@ -862,6 +928,8 @@
             this.grpReset.ResumeLayout(false);
             this.grpMethodAdd.ResumeLayout(false);
             this.grpMethodAdd.PerformLayout();
+            this.grpSelectCase.ResumeLayout(false);
+            this.grpSelectCase.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -940,6 +1008,12 @@
         internal System.Windows.Forms.Label lbNumberOne;
         internal System.Windows.Forms.TextBox tbNumberOne;
         internal System.Windows.Forms.Button btnAddDemo;
+        internal System.Windows.Forms.GroupBox grpSelectCase;
+        internal System.Windows.Forms.Label lblSelectCaseDescription;
+        internal System.Windows.Forms.Label lbSelectCaseOutput;
+        internal System.Windows.Forms.Label lbSelectCase;
+        internal System.Windows.Forms.TextBox tbSelectCase;
+        internal System.Windows.Forms.Button btnSelectCase;
     }
 }
 

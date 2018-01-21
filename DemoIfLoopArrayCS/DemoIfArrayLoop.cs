@@ -743,7 +743,7 @@ namespace DemoIfLoopArrayCS
         {
 
             btnAddDemo.Enabled = Enabled;
-            
+
             btnCreateArrayDemo.Enabled = Enabled;
 
             tbNumberOne.Text = string.Empty;
@@ -1041,6 +1041,59 @@ namespace DemoIfLoopArrayCS
         }
         #endregion
 
+        #region "select case"
+
+        /// <summary>
+        /// Private click event to demonstrate a select case statement
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSelectCase_Click(object sender, EventArgs e)
+        {
+
+            string grade = string.Empty;      // variable to hold the grade letter
+            string output = string.Empty;     // variable to hold the output
+
+            // get the grade from the text box
+            grade = tbSelectCase.Text.Trim();
+
+            // compare the grade to the
+            // ones in the different cases
+            switch (grade)
+            {
+                case "A":
+                case "a":
+                    output = "Nice!!!";
+                    break;
+                case "B":
+                case "b":
+                    output = "Respectable!";
+                    break;
+                case "C":
+                case "c":
+                    output = "Okay, not bad!";
+                    break;
+                case "D":
+                case "d":
+                    output = "A pass, is a pass.";
+                    break;
+                case "F":
+                case "f":
+                    output = "Uh oh, better hide this from the parents.";
+                    break;
+                default:
+
+                    // Nicely(ish), tell then to try again. 
+                    output = "What part of A, B, C, D, F did you not understand!\nPlease try again!";
+                    break;
+            }
+
+            // output the data to the output label
+            lbSelectCaseOutput.Text = output;
+
+        }
+        #endregion
+
         #region "assign appropriate Accept Button"
 
         /// <summary>
@@ -1144,6 +1197,14 @@ namespace DemoIfLoopArrayCS
                 this.AcceptButton = btnAddDemo;
 
             }
+            else if (controlName == "tbSelectCase")
+            {
+
+                // set the accept button
+                // to the appropriate button
+                this.AcceptButton = btnSelectCase;
+
+            }
         }
         #endregion
 
@@ -1159,9 +1220,7 @@ namespace DemoIfLoopArrayCS
             this.Close();
 
         }
-        #endregion
 
-        #region "place"
         #endregion
 
 
